@@ -1,7 +1,13 @@
+import "./style.css";
 function Button({ setIsButton, isButton }) {
+  function HandleButton() {
+    setIsButton(!isButton);
+  }
   return (
     <>
-      <button onClick={() => setIsButton(!isButton)}></button>
+      <button className="button" onClick={HandleButton}>
+        Random
+      </button>
     </>
   );
 }

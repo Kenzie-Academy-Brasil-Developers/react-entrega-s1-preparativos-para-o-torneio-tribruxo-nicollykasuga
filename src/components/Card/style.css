@@ -2,9 +2,11 @@
   background-color: aliceblue;
   border-radius: 9px;
   width: 250px;
-  height: 150px;
-  color: teal;
-  margin: 30px;
+  height: 145px;
+  color: #236993;
+  margin: 15px;
+  font-size: 1.3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .Cards {

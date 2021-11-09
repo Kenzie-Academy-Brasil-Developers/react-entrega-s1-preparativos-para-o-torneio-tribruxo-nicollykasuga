@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { Button } from "../Button/index";
 import { Card } from "../Card/index";
-function MenuContainer({ students, isButton, setIsButton }) {
+function MenuContainer({ students, isButton }) {
   const [wizards, setWizards] = useState([]);
 
   function randomNumber(arrayLength) {
@@ -41,7 +40,6 @@ function MenuContainer({ students, isButton, setIsButton }) {
       {wizards.map((item, index) => {
         return <Card key={index} students={item}></Card>;
       })}
-      <Button setIButton={setIsButton} isButton={isButton}></Button>
     </>
   );
 }

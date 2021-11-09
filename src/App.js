@@ -16,12 +16,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1 className="Title">Torneio Tribruxo</h1>
         {!!students.length && (
-          <MenuContainer
-            students={students}
-            isButton={isButton}
-            setIsButton={setIsButton}
-          />
+          <div>
+            <MenuContainer students={students} isButton={isButton} />
+            <Button setIsButton={setIsButton} isButton={isButton}></Button>
+          </div>
         )}
       </header>
     </div>
